@@ -1,21 +1,26 @@
 ﻿using GivePenny.GherkinSpec.TestModel;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Threading.Tasks;
 
 namespace GivePenny.GherkinSpec.ComplexExample.Tests.Steps
 {
     [Steps]
-    public class CalculatorArrangementSteps
+    public class CalculatorStorageSteps
     {
         private readonly Context context;
 
-        public CalculatorArrangementSteps(Context context)
+        public CalculatorStorageSteps(Context context)
         {
             this.context = context;
         }
 
         [Given(@"I have (\d+) apples")]
-        public void GivenIHaveSomeApples(int number)
+        public async Task GivenIHaveSomeApples(int number)
         {
+            // Real world might be making an API call here, or performing a database call or disk write, to set up initial state for the test.
+            await Task.Delay(
+                TimeSpan.FromSeconds(0.5));
+
             context.Calculator.Store(number);
         }
 

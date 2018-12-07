@@ -14,9 +14,9 @@ namespace GivePenny.GherkinSpec.ComplexExample.Tests.Configuration
 
             testRunContext.ServiceProvider = services
                 .AddScoped<Context>()
-                .AddScoped<CalculatorArrangementSteps>()
-                .AddScoped<CalculatorActionSteps>()
-                .AddScoped<CalculatorAssertionSteps>()
+                .AddScoped<CalculatorStorageSteps>()
+                .AddScoped<CalculatorOperationSteps>()
+                .AddScoped<CalculatorResultSteps>()
                 .BuildServiceProvider();
         }
 
