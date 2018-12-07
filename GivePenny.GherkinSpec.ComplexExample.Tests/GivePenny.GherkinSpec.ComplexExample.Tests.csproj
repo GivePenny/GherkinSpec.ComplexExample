@@ -10,21 +10,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Features\Subtraction.feature">
-      <CopyToOutputDirectory></CopyToOutputDirectory>
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Features\Addition.feature">
-      <Generator></Generator>
-      <CopyToOutputDirectory></CopyToOutputDirectory>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Features\**\*.feature"/>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
-    <PackageReference Include="GivePenny.GherkinSpec.TestAdapter" Version="0.1.23" />
+    <PackageReference Include="GivePenny.GherkinSpec.TestAdapter" Version="0.1.24" />
   </ItemGroup>
 
   <ItemGroup>
