@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28306.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GivePenny.GherkinSpec.ComplexExample.Tests", "GivePenny.GherkinSpec.ComplexExample.Tests\GivePenny.GherkinSpec.ComplexExample.Tests.csproj", "{45D3D455-2065-477C-9287-1C5DAD0BA042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GherkinSpec.ComplexExample.Tests", "GherkinSpec.ComplexExample.Tests\GherkinSpec.ComplexExample.Tests.csproj", "{45D3D455-2065-477C-9287-1C5DAD0BA042}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GivePenny.GherkinSpec.ComplexExample", "GivePenny.GherkinSpec.ComplexExample\GivePenny.GherkinSpec.ComplexExample.csproj", "{2FBF7323-4AFD-4EAF-AEB6-54E0B99F1553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GherkinSpec.ComplexExample", "GherkinSpec.ComplexExample\GherkinSpec.ComplexExample.csproj", "{2FBF7323-4AFD-4EAF-AEB6-54E0B99F1553}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{562D91E6-9ECC-4FE2-85F4-B289F7E22C94}"
 	ProjectSection(SolutionItems) = preProject

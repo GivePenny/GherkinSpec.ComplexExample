@@ -1,8 +1,8 @@
-﻿using GivePenny.GherkinSpec.ComplexExample.Tests.Steps;
-using GivePenny.GherkinSpec.TestModel;
+﻿using GherkinSpec.ComplexExample.Tests.Steps;
+using GherkinSpec.TestModel;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace GivePenny.GherkinSpec.ComplexExample.Tests.Configuration
+namespace GherkinSpec.ComplexExample.Tests.Configuration
 {
     [Steps]
     public static class Dependencies

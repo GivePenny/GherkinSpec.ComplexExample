@@ -1,4 +1,4 @@
-﻿namespace GivePenny.GherkinSpec.ComplexExample
+﻿namespace GherkinSpec.ComplexExample
 {
     public class Calculator
     {

@@ -1,9 +1,9 @@
-﻿using GivePenny.GherkinSpec.TestModel;
+﻿using GherkinSpec.TestModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Threading.Tasks;
 
-namespace GivePenny.GherkinSpec.ComplexExample.Tests.Steps
+namespace GherkinSpec.ComplexExample.Tests.Steps
 {
     [Steps]
     public class CalculatorResultSteps

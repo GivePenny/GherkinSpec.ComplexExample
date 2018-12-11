@@ -1,4 +1,4 @@
-﻿namespace GivePenny.GherkinSpec.ComplexExample.Tests.Steps
+﻿namespace GherkinSpec.ComplexExample.Tests.Steps
 {
     public class Context
     {
