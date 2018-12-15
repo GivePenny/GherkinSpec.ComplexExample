@@ -1,4 +1,5 @@
-﻿using GherkinSpec.TestModel;
+﻿using GherkinSpec.ComplexExample.Tests.Configuration;
+using GherkinSpec.TestModel;
 using System;
 using System.Threading.Tasks;
 
@@ -8,10 +9,12 @@ namespace GherkinSpec.ComplexExample.Tests.Steps
     public class CalculatorOperationSteps
     {
         private readonly Context context;
+        private readonly Settings settings;
 
-        public CalculatorOperationSteps(Context context)
+        public CalculatorOperationSteps(Context context, Settings settings)
         {
             this.context = context;
+            this.settings = settings;
         }
 
         [When(@"I add (\d+) more")]
@@ -23,6 +26,9 @@ namespace GherkinSpec.ComplexExample.Tests.Steps
                 TimeSpan.FromSeconds(0.5));
 
             context.Calculator.Add(number);
+
+            // Can use strongly-typed setting values by accessing them like this
+            var necessarySetting = settings.ExampleSetting;
         }
 
         [When(@"I subtract (\d+)")]
