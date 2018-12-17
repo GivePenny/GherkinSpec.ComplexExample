@@ -13,6 +13,7 @@ This example is intended to demonstrate possible features, as such it may not al
 * Dependency Injection using .NET Core's standard Microsoft.Extensions.DependencyInjection extension.
 * Async/await steps causing tests to run in parallel
 * Configuration example using .NET Core's standard appsettings.json files.
+* [Logging within a step](https://github.com/GivePenny/GherkinSpec/docs/Logging.md) using an `ITestLogAccessor`.
 
 ## Notes
 

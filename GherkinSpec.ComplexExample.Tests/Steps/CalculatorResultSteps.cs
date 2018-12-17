@@ -9,10 +9,12 @@ namespace GherkinSpec.ComplexExample.Tests.Steps
     public class CalculatorResultSteps
     {
         private readonly Context context;
+        private readonly ITestLogAccessor logger;
 
-        public CalculatorResultSteps(Context context)
+        public CalculatorResultSteps(Context context, ITestLogAccessor logger)
         {
             this.context = context;
+            this.logger = logger;
         }
 
         [Then(@"the result should be (\d+)")]
@@ -25,6 +27,8 @@ namespace GherkinSpec.ComplexExample.Tests.Steps
             Assert.AreEqual(
                 expectedResult,
                 context.Calculator.Result);
+
+            logger.LogStepInformation("Example log message.");
         }
 
         // Real world might have more assertion steps here, perhaps checking for complex numbers, fractions, etc.
