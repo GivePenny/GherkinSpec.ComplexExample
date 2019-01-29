@@ -14,8 +14,9 @@ namespace GherkinSpec.ComplexExample.Tests.Configuration
             var services = new ServiceCollection();
             testRunContext.ServiceProvider = services
                 .AddSettings()
-                .AddStepDefinitions()
                 .AddSingleton(testRunContext.Logger)
+                .AddScoped<Context>()
+                .AddAllStepsClassesAsScoped()
                 .BuildServiceProvider();
         }
 
@@ -28,15 +29,6 @@ namespace GherkinSpec.ComplexExample.Tests.Configuration
             var settings = configuration.Get<Settings>();
 
             return services.AddSingleton(settings);
-        }
-
-        private static IServiceCollection AddStepDefinitions(this IServiceCollection services)
-        {
-            return services
-                .AddScoped<Context>()
-                .AddScoped<CalculatorStorageSteps>()
-                .AddScoped<CalculatorOperationSteps>()
-                .AddScoped<CalculatorResultSteps>();
         }
 
         [AfterRun]
