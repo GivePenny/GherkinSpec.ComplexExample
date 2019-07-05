@@ -3,6 +3,7 @@
 	As an apple-hoarder
 	I want to add two numbers together
 
+@category(ExampleCategory)
 Scenario: Add two numbers together
 	Given I have 5 apples
 	When I add 6 more
